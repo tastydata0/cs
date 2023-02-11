@@ -1,0 +1,3 @@
+5
+19 8 -5 9 10
+Long message with a few spaces. Impossible to read using "<<". Try getline()...
