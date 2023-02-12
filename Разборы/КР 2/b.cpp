@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -14,5 +15,5 @@ int main() {
         cin >> t;
     } 
 
-    cout << (double)sum / count << " " << mn << " " << mx << endl;
+    cout << fixed << setprecision(2) << (double)sum / count << " " << mn << " " << mx << endl;
 }
