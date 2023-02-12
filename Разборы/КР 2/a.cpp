@@ -3,6 +3,13 @@
 using namespace std;
 
 int main() {
-    cout << "Hello world" << endl;
-    for(int i = 0; i < 10; i++) cout << i << " ";
+    int n, a, b;
+    cin >> n >> b >> a;
+
+    for(int i = 0; i < n; i++) {
+        int t; cin >> t;
+        a += t;
+    }
+
+    cout << a % b << endl;
 }
