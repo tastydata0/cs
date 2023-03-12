@@ -15,22 +15,22 @@ using namespace std;
 
 int main() {
     // открытие файла для чтения
-    ifstream input_file("input.txt");
-    if (!input_file.is_open()) {
+    ifstream fin("input.txt");
+    if (!fin.is_open()) {
         cout << "Не удалось открыть файл для чтения!" << endl;
         return 1;
     }
 
     // открытие файла для записи
-    ofstream output_file("output.txt");
-    if (!output_file.is_open()) {
+    ofstream fout("output.txt");
+    if (!fout.is_open()) {
         cout << "Не удалось открыть файл для записи!" << endl;
         return 1;
     }
 
     // закрытие файлов
-    input_file.close();
-    output_file.close();
+    fin.close();
+    fout.close();
 
     return 0;
 }
@@ -48,8 +48,8 @@ int main() {
 using namespace std;
 
 int main() {
-    ifstream input_file("input.txt");
-    if (!input_file.is_open()) {
+    ifstream fin("input.txt");
+    if (!fin.is_open()) {
         cout << "Не удалось открыть файл для чтения!" << endl;
         return 1;
     }
@@ -57,12 +57,12 @@ int main() {
     string name;
     int age;
 
-    input_file >> name >> age;
+    fin >> name >> age;
 
     cout << "Имя: " << name << endl;
     cout << "Возраст: " << age << endl;
 
-    input_file.close();
+    fin.close();
 
     return 0;
 }
@@ -79,15 +79,15 @@ int main() {
 using namespace std;
 
 int main() {
-    ofstream output_file("output.txt");
-    if (!output_file.is_open()) {
+    ofstream fout("output.txt");
+    if (!fout.is_open()) {
         cout << "Не удалось открыть файл для записи!" << endl;
         return 1;
     }
 
-    output_file << "Hello, world!" << endl;
+    fout << "Hello, world!" << endl;
 
-    output_file.close();
+    fout.close();
 
     return 0;
 }
@@ -102,19 +102,19 @@ int main() {
 using namespace std;
 
 int main() {
-    ifstream input_file("input.txt");
-    if (!input_file.is_open()) {
+    ifstream fin("input.txt");
+    if (!fin.is_open()) {
         cout << "Не удалось открыть файл для чтения!" << endl;
         return 1;
     }
 
     int x;
 
-    while (input_file >> x) {
+    while (fin >> x) {
         cout << x << " ";
     }
 
-    input_file.close();
+    fin.close();
 }
 ```
 
@@ -156,15 +156,15 @@ int main() {
 using namespace std;
 
 int main() {
-    ofstream output_file("/home/user/output.txt");
-    if (!output_file.is_open()) {
+    ofstream fout("/home/user/output.txt");
+    if (!fout.is_open()) {
         cout << "Не удалось открыть файл для записи!" << endl;
         return 1;
     }
 
-    output_file << "Hello, world!" << endl;
+    fout << "Hello, world!" << endl;
 
-    output_file.close();
+    fout.close();
 
     return 0;
 }
@@ -183,15 +183,15 @@ int main() {
 using namespace std;
 
 int main() {
-    ofstream output_file("../output.txt");
-    if (!output_file.is_open()) {
+    ofstream fout("../output.txt");
+    if (!fout.is_open()) {
         cout << "Не удалось открыть файл для записи!" << endl;
         return 1;
     }
 
-    output_file << "Hello, world!" << endl;
+    fout << "Hello, world!" << endl;
 
-    output_file.close();
+    fout.close();
 
     return 0;
 }
