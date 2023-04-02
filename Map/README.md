@@ -64,6 +64,14 @@ for (auto it = myMap.begin(); it != myMap.end(); ++it) {
 }
 ```
 
+Также можно использовать foreach:
+```cpp
+for (auto& kv : myMap) {
+    // kv - пара, где first - ключ, second - значение.
+    cout << kv.first << " has value " << kv.second << endl;
+}
+```
+
 Этот код выводит на экран все элементы `map` в порядке возрастания ключей.
 ## Использование
 
