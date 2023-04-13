@@ -45,3 +45,30 @@ int main() {
     return 0;
 }
 ```
+
+## hex(), dec(), oct()
+
+Функции hex(), dec() и oct() устанавливают систему счисления для вывода чисел. Функция hex() выводит число в шестнадцатеричной системе счисления, функция dec() - в десятичной системе счисления, а функция oct() - в восьмеричной системе счисления.
+
+```cpp
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    int num = 123;
+    cout << hex << num << endl;
+    cout << dec << num << endl;
+    cout << oct << num << endl;
+    return 0;
+}
+```
+
+Вывод:
+
+```
+7b
+123
+173
+```
