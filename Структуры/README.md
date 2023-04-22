@@ -3,7 +3,7 @@
 
 ### Табло для аэропорта
 
-<img src="https://learnenglish.britishcouncil.org/sites/podcasts/files/RS277_113591519-hig.jpg">
+<img src="board.jpg">
 
 Напишем программу, которая выводит на экран табло аэропорта. На табло должны быть выведены следующие данные:
 
