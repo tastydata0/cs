@@ -1,0 +1,69 @@
+\hypertarget{header_8h}{}\doxysection{header.\+h File Reference}
+\label{header_8h}\index{header.h@{header.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{header_8h_a5ceb2172cbc407c45e7e9f2d22a2b5c1}{sum}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Функция, суммирующая 2 числа \end{DoxyCompactList}\item 
+string $\ast$ \mbox{\hyperlink{header_8h_a58519091a180419895f891cbab536144}{read\+File}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em Считывание содержимого файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a4f1351c278281c1e903cc005e5946bb3}{create\+File}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em Функция создания файла \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{header_8h_a4f1351c278281c1e903cc005e5946bb3}\label{header_8h_a4f1351c278281c1e903cc005e5946bb3}} 
+\index{header.h@{header.h}!createFile@{createFile}}
+\index{createFile@{createFile}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{createFile()}{createFile()}}
+{\footnotesize\ttfamily void create\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция создания файла 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ имя файла относительно рабочей директории, либо абсолютный путь к файлу \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{header_8h_a58519091a180419895f891cbab536144}\label{header_8h_a58519091a180419895f891cbab536144}} 
+\index{header.h@{header.h}!readFile@{readFile}}
+\index{readFile@{readFile}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily string $\ast$ read\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Считывание содержимого файла 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ имя файла относительно рабочей директории, либо абсолютный путь к файлу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на строку в динамической памяти с содержимым файла 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_a5ceb2172cbc407c45e7e9f2d22a2b5c1}\label{header_8h_a5ceb2172cbc407c45e7e9f2d22a2b5c1}} 
+\index{header.h@{header.h}!sum@{sum}}
+\index{sum@{sum}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily int sum (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Функция, суммирующая 2 числа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & первое слагаемое \\
+\hline
+{\em b} & второе слагаемое \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сумма a и b 
+\end{DoxyReturn}

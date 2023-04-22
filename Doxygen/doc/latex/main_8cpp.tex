@@ -1,0 +1,105 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a5ceb2172cbc407c45e7e9f2d22a2b5c1}{sum}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Функция, суммирующая 2 числа \end{DoxyCompactList}\item 
+string $\ast$ \mbox{\hyperlink{main_8cpp_a58519091a180419895f891cbab536144}{read\+File}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em Считывание содержимого файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a4f1351c278281c1e903cc005e5946bb3}{create\+File}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em Функция создания файла \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a4f1351c278281c1e903cc005e5946bb3}\label{main_8cpp_a4f1351c278281c1e903cc005e5946bb3}} 
+\index{main.cpp@{main.cpp}!createFile@{createFile}}
+\index{createFile@{createFile}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{createFile()}{createFile()}}
+{\footnotesize\ttfamily void create\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция создания файла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & -\/ имя файла относительно рабочей директории, либо абсолютный путь к файлу \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{main_8cpp_a4f1351c278281c1e903cc005e5946bb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a58519091a180419895f891cbab536144}\label{main_8cpp_a58519091a180419895f891cbab536144}} 
+\index{main.cpp@{main.cpp}!readFile@{readFile}}
+\index{readFile@{readFile}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily string $\ast$ read\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Считывание содержимого файла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & -\/ имя файла относительно рабочей директории, либо абсолютный путь к файлу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на строку в динамической памяти с содержимым файла 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{main_8cpp_a58519091a180419895f891cbab536144_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a5ceb2172cbc407c45e7e9f2d22a2b5c1}\label{main_8cpp_a5ceb2172cbc407c45e7e9f2d22a2b5c1}} 
+\index{main.cpp@{main.cpp}!sum@{sum}}
+\index{sum@{sum}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily int sum (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Функция, суммирующая 2 числа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em a} & первое слагаемое \\
+\hline
+{\em b} & второе слагаемое \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сумма a и b 
+\end{DoxyReturn}
