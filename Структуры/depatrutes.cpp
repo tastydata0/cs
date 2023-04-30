@@ -49,11 +49,23 @@ struct SimpleTime {
     }
 };
 
+
+SimpleTime getLocaltime() {
+    time_t rawtime = time(0);
+    tm* timeinfo = localtime(&rawtime);
+    int hours = timeinfo->tm_hour;
+    int minutes = timeinfo->tm_min;
+
+    return {hours, minutes};
+}
+
+
 struct Departure {
-    SimpleTime _time;   // Время вылета
-    int id;             // Номер рейса
-    string destination; // Направление
-    string gate;        // Выход
+    SimpleTime _time;        // Время вылета
+    int id;                  // Номер рейса
+    string destination;      // Направление
+    string gate;             // Выход
+    bool cancelled = false;  // Отменен ли рейс
 
     Departure() {}
 
@@ -63,20 +75,43 @@ struct Departure {
         id = rand() % 10000;
         gate = (char)('A' + rand() % 5) + to_string(rand() % 50 + 1);
         destination = cities->at(rand() % cities->size());
+
+        // Отмена рейса с шансом 20%
+        if (rand() % 10 <= 1) {
+            cancelled = true;
+        }
     }
 
-    void print(int status) {
+    bool isBoarding() {
+
+        // Время начала посадки: время вылета - 30 минут
+        SimpleTime boardingTime = _time;
+        boardingTime.minute -= 30;
+        if (boardingTime.minute < 0) {
+            boardingTime.hour--;
+            boardingTime.minute += 60;
+            if (boardingTime.hour == -1) {
+                boardingTime.hour = 23;
+            }
+        }
+
+        return !(getLocaltime() < boardingTime);
+    }
+
+    void print() {
         cout << "| " << setw(4) << left << id << " | ";
         cout << _time.toString() << " | ";
         cout << WARNING << BOLD << setw(20) << left << destination << ENDC << " | ";
         cout << setw(4) << left << gate << " | ";
 
-        if (status == STATUS_NONE)
-            cout << setw(8) << "" << " |" << endl;
-        else if (status == STATUS_CANCEL)
-            cout << setw(8) << "canceled" << " |" << endl;
-        else if (status == STATUS_BOARDING)
-            cout << setw(8) << "boarding" << " |" << endl;
+        if (isBoarding() && !cancelled) 
+            cout << BOLD << GREEN << setw(8) << "boarding" << ENDC;
+         else if(cancelled) 
+            cout << BOLD << FAIL << setw(8) << "canceled" << ENDC;
+         else 
+            cout << setw(8) << "";
+        
+        cout << " |" << endl;
 
         cout << "|------|-------|----------------------|------|----------|" << endl;
     }
@@ -92,15 +127,6 @@ void clearScreen() {
 }
 
 
-SimpleTime getLocaltime() {
-    time_t rawtime = time(0);
-    tm* timeinfo = localtime(&rawtime);
-    int hours = timeinfo->tm_hour;
-    int minutes = timeinfo->tm_min;
-
-    return {hours, minutes};
-}
-
 void printHeader() {
     cout << "|  ID  | TIME  | DESTINATION          | GATE | STATUS   |" << endl;
     cout << "|------|-------|----------------------|------|----------|" << endl;
@@ -114,7 +140,7 @@ void redner(vector<Departure>* departures) {
     int printed = 0;
     for (int i = 0; i < departures->size() && printed <= 10; i++) {
         if (!(departures->at(i)._time < currentTime)) {
-            departures->at(i).print(STATUS_BOARDING);
+            departures->at(i).print();
             printed++;
         }
     }
