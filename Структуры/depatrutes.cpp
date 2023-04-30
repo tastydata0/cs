@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -5,6 +7,7 @@
 #include <iomanip>
 #include <fstream>
 #include <sstream>
+#include <algorithm>
 
 using namespace std;
 
@@ -13,9 +16,22 @@ void clearScreen() {
     // Если не работает на винде, пишите system("cls");
 }
 
-void updateInfinitely(int delayMilliseconds) {
+void redner(vector<Departure>* departures) {
+    SimpleTime currentTime = getLocaltime();
+
+    int printed = 0;
+    for (int i = 0; i < departures->size() && printed <= 10; i++) {
+        if (!(departures->at(i)._time < currentTime)) {
+            departures->at(i).print();
+            printed++;
+        }
+    }
+}
+
+void updateInfinitely(vector<Departure>* departures, int delayMilliseconds) {
     while (true) {
         clearScreen();
+        redner(departures);
         cout << "Updating..." << endl;
         this_thread::sleep_for(chrono::milliseconds(delayMilliseconds));
     }
@@ -82,7 +98,7 @@ void printHeader() {
 
 vector<string>* readCities() {
     vector<string>* cities = new vector<string>;
-    ifstream fin("../cities.txt");
+    ifstream fin("cities.txt");
 
     string buffer;
     while(getline(fin, buffer))
@@ -115,15 +131,7 @@ int main() {
     
     sort(departures->begin(), departures->end());
 
-    SimpleTime currentTime = getLocaltime();
-
-    int printed = 0;
-    for (int i = 0; i < departures->size() && printed <= 10; i++) {
-        if (!(departures->at(i)._time < currentTime)) {
-            departures->at(i).print();
-            printed++;
-        }
-    }
+    
      cout << "\033[1;31mbold red text\033[0m\n";
     
     delete departures;
