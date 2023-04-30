@@ -267,19 +267,27 @@ Strength, Perception, Endurance, Charisma, Intelligence, Agility, and Luck
 ```
 |========================================================================|
 |      STAT         [INV]        DATA            MAP          RADIO      |
-|========================================================================|
-| Weapon: 10mm pistol         | Special:                                 |
-| Armor:                           - Strength: 5                         |
-|   - Pilot glasses                - Perception: 4                       |
-|   - Сanvas tunic                 - Endurance: 5                        |
-|   - Boots                        - Charisma: 4                         |
-| Inventory:                       - Intelligence: 7                     |
-|   - Medkit (16)                  - Agility: 6                          |
-|   - Bullets (280)                - Luck: 4                             |
+|------------------------------------------------------------------------|
+| Weapon: 10mm pistol                                                    |  Armor:                                                                   |
+|   - Pilot glasses                                                      |
+|   - Сanvas tunic                                                       |
+|   - Boots                                                              |
+| Inventory:                                                             |
+|   - Medkit (16)                                                        |
+|   - Bullets (280)                                                      |
 |   - Square pants                                                       |
 |   - Shotgun                                                            |
+| Special:                                                               |
+|   - Strength: 5                                                        |   
+|   - Perception: 4                                                      |     
+|   - Endurance: 5                                                       |     
+|   - Charisma: 4                                                        |   
+|   - Intelligence: 7                                                    |       
+|   - Agility: 6                                                         |   
+|   - Luck: 4                                                            | 
 |------------------------------------------------------------------------|
 | HP: 95/100   | Level 17 [==========                    ] |   AP: 50/70 |
+|========================================================================|
 ```
 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
