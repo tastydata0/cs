@@ -53,3 +53,5 @@
 <center>
 <img width=40% src="https://community.alteryx.com/t5/image/serverpage/image-id/48432i2C87BE19162EEE08?v=v2">
 </center>
+
+## Рассказать уровни абстракции?
