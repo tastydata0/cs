@@ -43,6 +43,7 @@
 
 Структуры/pipboy
 
-.vscode
-Doxygen
-Map
+.vscode/*
+Doxygen/*
+Map/
+Set
