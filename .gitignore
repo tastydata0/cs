@@ -44,6 +44,4 @@
 Структуры/pipboy
 
 .vscode/*
-Doxygen/*
-Map/
-Set
+hidden/*
