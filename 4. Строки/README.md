@@ -131,6 +131,91 @@ int main() {
 
 Обе функции `stoi` и `to_string` очень полезны при работе с вводом/выводом и обработке числовых данных в строковом формате.
 
+## Еще полезные функции
+
+1. **isdigit() - функция проверки символа на цифру**:
+
+isdigit - это функция, которая проверяет, является ли данный символ цифрой (от '0' до '9'). Она возвращает true, если символ является цифрой, и false, если это не цифра.:
+
+   ```cpp
+   #include <iostream>
+   #include <cctype>
+   using namespace std;
+
+   int main() {
+       char character = '5';
+
+       if (isdigit(character)) {
+           cout << "Это цифра." << endl;
+       } else {
+           cout << "Это не цифра." << endl;
+       }
+
+       return 0;
+   }
+   ```
+
+2. **substr() - функция извлечения подстроки**:
+
+substr позволяет вам извлечь подстроку из исходной строки. Она принимает два аргумента: начальный индекс и длину подстроки.
+
+   ```cpp
+   #include <iostream>
+   #include <string>
+   using namespace std;
+
+   int main() {
+       string original = "Привет, мир!";
+       string sub = original.substr(8, 4);
+
+       cout << "Подстрока: " << sub << endl;
+       return 0;
+   }
+   ```
+
+3. **erase() - функция удаления символов**:
+
+erase позволяет вам удалить определенный диапазон символов из строки. Она принимает начальный индекс и количество удаляемых символов.
+
+   ```cpp
+   #include <iostream>
+   #include <string>
+   using namespace std;
+
+   int main() {
+       string text = "Удалить этот текст!";
+       text.erase(0, 8);
+
+       cout << "Остаток строки: " << text << endl;
+       return 0;
+   }
+   ```
+
+4. **find() - функция поиска подстроки**:
+
+find используется для поиска первого вхождения подстроки в строку. Она возвращает индекс, по которому начинается подстрока, или -1 (или `string::npos`), если подстрока не найдена.
+
+   ```cpp
+   #include <iostream>
+   #include <string>
+   using namespace std;
+
+   int main() {
+       string text = "Это пример поиска в строке.";
+       string target = "поиска";
+       
+       int found = text.find(target);
+       
+       if (found != string::npos) {
+           cout << "Подстрока найдена в позиции " << found << endl;
+       } else {
+           cout << "Подстрока не найдена." << endl;
+       }
+
+       return 0;
+   }
+   ```
+
 ## Задачи!!!
 
 1. Обратная строка:
