@@ -19,6 +19,7 @@
 - https://github.com/p-ranav/indicators - вывод прогрессбаров
 - https://github.com/CrowCpp/Crow - собственный сервер, к которому можно прислать запрос через браузер
 - https://github.com/libcpr/cpr - отправка запросов в сеть. Нужен Cmake
+- https://github.com/martinRenou/terminal - считывание нажатий клавиш и многое другое
 
 ## Пример работы с библиотекой rang
 
