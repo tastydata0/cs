@@ -12,14 +12,15 @@
 > Обратите внимание, что при подключении файлов, лежащих не в недрах системы, а в вашем проекте, используются `""` вместо `<>`. Последний ищет только в системных каталогах.
 
 ## Полезные библиотеки
-- https://github.com/agauniyal/rang - вывод цветного и стилизованного текста
-- https://github.com/lava/matplotlib-cpp - вывод вообще любых графиков (не в консоль!), даже 3D.
-- https://github.com/yhirose/cpp-peglib - обработка арифметических выражений. Решит пример (2 + 2) * 2
-- https://github.com/okdshin/PicoSHA2 - генератор хеша SHA-256. Нужно для криптографии
-- https://github.com/p-ranav/indicators - вывод прогрессбаров
-- https://github.com/CrowCpp/Crow - собственный сервер, к которому можно прислать запрос через браузер
-- https://github.com/libcpr/cpr - отправка запросов в сеть. Нужен Cmake
-- https://github.com/martinRenou/terminal - считывание нажатий клавиш и многое другое
+
+- <https://github.com/agauniyal/rang> - вывод цветного и стилизованного текста
+- <https://github.com/lava/matplotlib-cpp> - вывод вообще любых графиков (не в консоль!), даже 3D.
+- <https://github.com/yhirose/cpp-peglib> - обработка арифметических выражений. Решит пример (2 + 2) * 2
+- <https://github.com/okdshin/PicoSHA2> - генератор хеша SHA-256. Нужно для криптографии
+- <https://github.com/p-ranav/indicators> - вывод прогрессбаров
+- <https://github.com/CrowCpp/Crow> - собственный сервер, к которому можно прислать запрос через браузер
+- <https://github.com/libcpr/cpr> - отправка запросов в сеть. Нужен Cmake
+- <https://github.com/martinRenou/terminal> - считывание нажатий клавиш и многое другое
 
 ## Пример работы с библиотекой rang
 
@@ -69,6 +70,7 @@ int main()
     cout << fg::gray << "╚════╩═══════════════╝\n";
 }
 ```
+
 <img src="light.png"/>
 <img src="dark.png"/>
 
@@ -82,7 +84,6 @@ int main()
 
 Например, для скачивания picoSHA мы пишем
 > `git clone https://github.com/okdshin/PicoSHA2`
-
 
 ## Подключаем не-header-only библиотеку через CMake
 
