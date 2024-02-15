@@ -236,5 +236,7 @@ int main() {
 Если хотите сделать чуть больше, попробуйте формировать еще email из первых 3-4 букв фамилии и суффиксом "@gmail.com" или типа того.
 
 Имена: `https://pastebin.com/raw/sSTQ4Dq6`
+
 Фамилии: `https://pastebin.com/raw/45LYuuDp`
+
 Адреса: `https://pastebin.com/raw/2zcnJgEv`
