@@ -1,0 +1,119 @@
+AtomicNumber,Element,Symbol,AtomicMass,NumberofNeutrons,NumberofProtons,Period,Metal,Type,BoilingPoint
+1,Hydrogen,H,1.007,0,1,1,,Nonmetal,20.28
+2,Helium,He,4.002,2,2,1,,Noble Gas,4.22
+3,Lithium,Li,6.941,4,3,2,yes,Alkali Metal,1615.0
+4,Beryllium,Be,9.012,5,4,2,yes,Alkaline Earth Metal,2742.0
+5,Boron,B,10.811,6,5,2,,Metalloid,4200.0
+6,Carbon,C,12.011,6,6,2,,Nonmetal,4300.0
+7,Nitrogen,N,14.007,7,7,2,,Nonmetal,77.36
+8,Oxygen,O,15.999,8,8,2,,Nonmetal,90.2
+9,Fluorine,F,18.998,10,9,2,,Halogen,85.03
+10,Neon,Ne,20.18,10,10,2,,Noble Gas,27.07
+11,Sodium,Na,22.99,12,11,3,yes,Alkali Metal,1156.0
+12,Magnesium,Mg,24.305,12,12,3,yes,Alkaline Earth Metal,1363.0
+13,Aluminum,Al,26.982,14,13,3,yes,Metal,2792.0
+14,Silicon,Si,28.086,14,14,3,,Metalloid,3538.0
+15,Phosphorus,P,30.974,16,15,3,,Nonmetal,553.0
+16,Sulfur,S,32.065,16,16,3,,Nonmetal,717.8
+17,Chlorine,Cl,35.453,18,17,3,,Halogen,239.11
+18,Argon,Ar,39.948,22,18,3,,Noble Gas,87.3
+19,Potassium,K,39.098,20,19,4,yes,Alkali Metal,1032.0
+20,Calcium,Ca,40.078,20,20,4,yes,Alkaline Earth Metal,1757.0
+21,Scandium,Sc,44.956,24,21,4,yes,Transition Metal,3109.0
+22,Titanium,Ti,47.867,26,22,4,yes,Transition Metal,3560.0
+23,Vanadium,V,50.942,28,23,4,yes,Transition Metal,3680.0
+24,Chromium,Cr,51.996,28,24,4,yes,Transition Metal,2944.0
+25,Manganese,Mn,54.938,30,25,4,yes,Transition Metal,2334.0
+26,Iron,Fe,55.845,30,26,4,yes,Transition Metal,3134.0
+27,Cobalt,Co,58.933,32,27,4,yes,Transition Metal,3200.0
+28,Nickel,Ni,58.693,31,28,4,yes,Transition Metal,3186.0
+29,Copper,Cu,63.546,35,29,4,yes,Transition Metal,2835.0
+30,Zinc,Zn,65.38,35,30,4,yes,Transition Metal,1180.0
+31,Gallium,Ga,69.723,39,31,4,yes,Metal,2477.0
+32,Germanium,Ge,72.64,41,32,4,,Metalloid,3106.0
+33,Arsenic,As,74.922,42,33,4,,Metalloid,887.0
+34,Selenium,Se,78.96,45,34,4,,Nonmetal,958.0
+35,Bromine,Br,79.904,45,35,4,,Halogen,332.0
+36,Krypton,Kr,83.798,48,36,4,,Noble Gas,119.93
+37,Rubidium,Rb,85.468,48,37,5,yes,Alkali Metal,961.0
+38,Strontium,Sr,87.62,50,38,5,yes,Alkaline Earth Metal,1655.0
+39,Yttrium,Y,88.906,50,39,5,yes,Transition Metal,3609.0
+40,Zirconium,Zr,91.224,51,40,5,yes,Transition Metal,4682.0
+41,Niobium,Nb,92.906,52,41,5,yes,Transition Metal,5017.0
+42,Molybdenum,Mo,95.96,54,42,5,yes,Transition Metal,4912.0
+43,Technetium,Tc,98.0,55,43,5,yes,Transition Metal,5150.0
+44,Ruthenium,Ru,101.07,57,44,5,yes,Transition Metal,4423.0
+45,Rhodium,Rh,102.906,58,45,5,yes,Transition Metal,3968.0
+46,Palladium,Pd,106.42,60,46,5,yes,Transition Metal,3236.0
+47,Silver,Ag,107.868,61,47,5,yes,Transition Metal,2435.0
+48,Cadmium,Cd,112.411,64,48,5,yes,Transition Metal,1040.0
+49,Indium,In,114.818,66,49,5,yes,Metal,2345.0
+50,Tin,Sn,118.71,69,50,5,yes,Metal,2875.0
+51,Antimony,Sb,121.76,71,51,5,,Metalloid,1860.0
+52,Tellurium,Te,127.6,76,52,5,,Metalloid,1261.0
+53,Iodine,I,126.904,74,53,5,,Halogen,457.4
+54,Xenon,Xe,131.293,77,54,5,,Noble Gas,165.03
+55,Cesium,Cs,132.905,78,55,6,yes,Alkali Metal,944.0
+56,Barium,Ba,137.327,81,56,6,yes,Alkaline Earth Metal,2170.0
+57,Lanthanum,La,138.905,82,57,6,yes,Lanthanide,3737.0
+58,Cerium,Ce,140.116,82,58,6,yes,Lanthanide,3716.0
+59,Praseodymium,Pr,140.908,82,59,6,yes,Lanthanide,3793.0
+60,Neodymium,Nd,144.242,84,60,6,yes,Lanthanide,3347.0
+61,Promethium,Pm,145.0,84,61,6,yes,Lanthanide,3273.0
+62,Samarium,Sm,150.36,88,62,6,yes,Lanthanide,2067.0
+63,Europium,Eu,151.964,89,63,6,yes,Lanthanide,1802.0
+64,Gadolinium,Gd,157.25,93,64,6,yes,Lanthanide,3546.0
+65,Terbium,Tb,158.925,94,65,6,yes,Lanthanide,3503.0
+66,Dysprosium,Dy,162.5,97,66,6,yes,Lanthanide,2840.0
+67,Holmium,Ho,164.93,98,67,6,yes,Lanthanide,2993.0
+68,Erbium,Er,167.259,99,68,6,yes,Lanthanide,3503.0
+69,Thulium,Tm,168.934,100,69,6,yes,Lanthanide,2223.0
+70,Ytterbium,Yb,173.054,103,70,6,yes,Lanthanide,1469.0
+71,Lutetium,Lu,174.967,104,71,6,yes,Lanthanide,3675.0
+72,Hafnium,Hf,178.49,106,72,6,yes,Transition Metal,4876.0
+73,Tantalum,Ta,180.948,108,73,6,yes,Transition Metal,5731.0
+74,Wolfram,W,183.84,110,74,6,yes,Transition Metal,5828.0
+75,Rhenium,Re,186.207,111,75,6,yes,Transition Metal,5869.0
+76,Osmium,Os,190.23,114,76,6,yes,Transition Metal,5285.0
+77,Iridium,Ir,192.217,115,77,6,yes,Transition Metal,4701.0
+78,Platinum,Pt,195.084,117,78,6,yes,Transition Metal,4098.0
+79,Gold,Au,196.967,118,79,6,yes,Transition Metal,3129.0
+80,Mercury,Hg,200.59,121,80,6,yes,Transition Metal,630.0
+81,Thallium,Tl,204.383,123,81,6,yes,Metal,1746.0
+82,Lead,Pb,207.2,125,82,6,yes,Metal,2022.0
+83,Bismuth,Bi,208.98,126,83,6,yes,Metal,1837.0
+84,Polonium,Po,210.0,126,84,6,,Metalloid,1235.0
+85,Astatine,At,210.0,125,85,6,,Noble Gas,610.0
+86,Radon,Rn,222.0,136,86,6,yes,Alkali Metal,211.3
+87,Francium,Fr,223.0,136,87,7,yes,Alkaline Earth Metal,950.0
+88,Radium,Ra,226.0,138,88,7,yes,Actinide,2010.0
+89,Actinium,Ac,227.0,138,89,7,yes,Actinide,3471.0
+90,Thorium,Th,232.038,142,90,7,yes,Actinide,5061.0
+91,Protactinium,Pa,231.036,140,91,7,yes,Actinide,4300.0
+92,Uranium,U,238.029,146,92,7,yes,Actinide,4404.0
+93,Neptunium,Np,237.0,144,93,7,yes,Actinide,4273.0
+94,Plutonium,Pu,244.0,150,94,7,yes,Actinide,3501.0
+95,Americium,Am,243.0,148,95,7,yes,Actinide,2880.0
+96,Curium,Cm,247.0,151,96,7,yes,Actinide,3383.0
+97,Berkelium,Bk,247.0,150,97,7,yes,Actinide,983.0
+98,Californium,Cf,251.0,153,98,7,yes,Actinide,1173.0
+99,Einsteinium,Es,252.0,153,99,7,yes,Actinide,
+100,Fermium,Fm,257.0,157,100,7,yes,Actinide,
+101,Mendelevium,Md,258.0,157,101,7,yes,Actinide,
+102,Nobelium,No,259.0,157,102,7,yes,Actinide,
+103,Lawrencium,Lr,262.0,159,103,7,yes,Actinide,
+104,Rutherfordium,Rf,261.0,157,104,7,yes,Transactinide,
+105,Dubnium,Db,262.0,157,105,7,yes,Transactinide,
+106,Seaborgium,Sg,266.0,160,106,7,yes,Transactinide,
+107,Bohrium,Bh,264.0,157,107,7,yes,Transactinide,
+108,Hassium,Hs,267.0,159,108,7,yes,Transactinide,
+109,Meitnerium,Mt,268.0,159,109,7,yes,Transactinide,
+110,Darmstadtium ,Ds ,271.0,161,110,7,yes,Transactinide,
+111,Roentgenium ,Rg ,272.0,161,111,7,yes,Transactinide,
+112,Copernicium ,Cn ,285.0,173,112,7,yes,Transactinide,
+113,Nihonium,Nh,284.0,171,113,7,yes,,
+114,Flerovium,Fl,289.0,175,114,7,yes,Transactinide,
+115,Moscovium,Mc,288.0,173,115,7,yes,,
+116,Livermorium,Lv,292.0,176,116,7,yes,Transactinide,
+117,Tennessine,Ts,295.0,178,117,7,,,
+118,Oganesson,Og,294.0,176,118,7,,Noble Gas,
