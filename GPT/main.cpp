@@ -6,6 +6,13 @@
 
 using namespace std;
 
+int getlineInt(istream& stream)
+{
+    string line;
+    getline(stream, line);
+    return stoi(line);
+}
+
 int main()
 {
     if (OPENAI_API_URL.empty()) {
@@ -25,10 +32,7 @@ int main()
 
     stringstream gin(gptOutput);
     vector<Question> quiz;
-    int n;
-    string nStr;
-    getline(gin, nStr);
-    n = stoi(nStr);
+    int n = getlineInt(gin);
 
     for (int i = 0; i < n; i++) {
         Question q;
@@ -39,10 +43,7 @@ int main()
             getline(gin, answer);
             q.answers.push_back(answer);
         }
-        int correctNum;
-        string correctNumStr;
-        getline(gin, correctNumStr);
-        correctNum = stoi(correctNumStr);
+        int correctNum = getlineInt(gin);
         q.correctAnswerIndex = correctNum - 1;
 
         quiz.push_back(q);
